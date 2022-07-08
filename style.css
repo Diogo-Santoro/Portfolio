@@ -5,9 +5,7 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color:brown;
-    
 }
-
 .header-container{
     height: 100vh;
     width: 100vw;
@@ -35,9 +33,8 @@ h2{
 }
 .social-media{
     margin-top: 1rem;
-    display: flex;
+    display: flex; 
 }
-
 .social-media a{
     text-decoration: none;
     color:rgb(0, 0, 0);
@@ -49,11 +46,9 @@ h2{
     justify-content: center;
     transition: .5s ease-in-out;
 }
-
 a:hover{
     background-color: antiquewhite;
 }
-
 .checkbox-container{
     display: flex;
     justify-content: center;
@@ -97,7 +92,6 @@ a:hover{
 #toggle{
     display: none;
 }
-
 .menu{
     position: absolute;
     top: 28px;
@@ -110,7 +104,6 @@ a:hover{
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
-
 .menu-items{
     position: fixed;
     top: 0px;
@@ -125,11 +118,9 @@ a:hover{
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
 }
-
 .menu-items ul{
     list-style-type: none;
 }
-
 .menu-items ul li a{
     margin: 10px 0;
     color:brown;
@@ -139,39 +130,32 @@ a:hover{
     font-size: 40px;
 
 }
-
 #toggle :checked + .checkbox .trace:nth-child(1){
     transform: rotate(45deg);
     top: 47px;
 }
-
 #toggle :checked + .checkbox .trace:nth-child(2){
     transform: translate(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
 }
-
 #toggle :checked + .checkbox .trace:nth-child(3){
     transform: rotate(-45deg);
     top: 48px;
 
 }
-
 #toggle:checked + .checkbox{
     background-color: white;
 }
-
 #toggle:checked ~ .menu{
     box-shadow: 0px 0px 0px 0px 100vmax white;
     z-index: 1;
 }
-
 #toggle:checked ~ .menu-items{
     visibility: visible;
     opacity: 1;
 }
-
 .container{
     height: auto;
     width: 100%;
@@ -189,7 +173,6 @@ a:hover{
     align-items: center;
     width: 90%;
 }
-
 .card{
     width: 300px;
     height: 300px;
@@ -208,13 +191,11 @@ a:hover{
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
-
 .card-text{
     width: 40%;
     letter-spacing: 1px;
     color:rgb(0, 0, 0);
 }
-
 .card-wrapper{
     text-align:center;
     display: flex;
@@ -223,7 +204,6 @@ a:hover{
     align-items: center;
     position: relative;
 }
-
 .card-wrapper::before{
     content:'';
     position: absolute;
@@ -235,7 +215,6 @@ a:hover{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-
 .card-wrapper h2{
     font-size: 40px;
     text-transform: uppercase;
@@ -243,7 +222,6 @@ a:hover{
     margin:0;
     transition: 0.5s ease-in-out;
 }
-
 .card-wrapper p{
     font-size: 0;
     visibility: visible;
@@ -252,7 +230,6 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-
 .card:hover{
     filter:unset;
 }
@@ -261,7 +238,6 @@ a:hover{
     width: 250px;
     opacity: 1;
 }
-
 .card:hover > .card-wrapper p {
     opacity: 1;
     visibility: visible;
@@ -276,7 +252,6 @@ a:hover{
     align-items: center;
     width: 90%;
 }
-
 .card2{
     width: 300px;
     height: 300px;
@@ -295,13 +270,11 @@ a:hover{
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
-
 .card-text2{
     width: 40%;
     letter-spacing: 1px;
     color:rgb(0, 0, 0);
 }
-
 .card-wrapper2{
     text-align:center;
     display: flex;
@@ -310,7 +283,6 @@ a:hover{
     align-items: center;
     position: relative;
 }
-
 .card-wrapper2::before{
     content:'';
     position: absolute;
@@ -322,7 +294,6 @@ a:hover{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-
 .card-wrapper2 h2{
     font-size: 40px;
     text-transform: uppercase;
@@ -339,7 +310,6 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-
 .card2:hover{
     filter:unset;
 }
@@ -348,7 +318,6 @@ a:hover{
     width: 250px;
     opacity: 1;
 }
-
 .card2:hover > .card-wrapper2 p {
     opacity: 1;
     visibility: visible;
@@ -363,7 +332,6 @@ a:hover{
     align-items: center;
     width: 90%;
 }
-
 .card3{
     width: 300px;
     height: 300px;
@@ -382,13 +350,11 @@ a:hover{
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
-
 .card-text3{
     width: 40%;
     letter-spacing: 1px;
     color:rgb(0, 0, 0);
 }
-
 .card-wrapper3{
     text-align:center;
     display: flex;
@@ -397,7 +363,6 @@ a:hover{
     align-items: center;
     position: relative;
 }
-
 .card-wrapper3::before{
     content:'';
     position: absolute;
@@ -409,7 +374,6 @@ a:hover{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-
 .card-wrapper3 h2{
     font-size: 40px;
     text-transform: uppercase;
@@ -417,7 +381,6 @@ a:hover{
     margin:0;
     transition: 0.5s ease-in-out;
 }
-
 .card-wrapper3 p{
     font-size: 0;
     visibility: visible;
@@ -426,17 +389,14 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-
 .card3:hover{
     filter:unset;
 }
-
 .card3:hover > .card-wrapper3::before{
     height: 250px;
     width: 250px;
     opacity: 1;
 }
-
 .card3:hover > .card-wrapper3 p {
     opacity: 1;
     visibility: visible;
