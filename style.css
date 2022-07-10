@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color:brown;
+    color: black;
 }
-.header-container{
+
+.header-container {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(219, 168, 168);
+    background-color:  rgb(219, 168, 168);
     background-image: url('./img/Background.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -22,22 +23,37 @@ body{
     padding: 0 112px;
     position: relative;
 }
+
 h1{
     font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    margin-top: -10px;
 }
+
 h2{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    margin-top: -10px;
 }
+
+@keyframes blinkCursor{
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
 .social-media{
     margin-top: 1rem;
-    display: flex; 
+    display: flex;
 }
+
 .social-media a{
     text-decoration: none;
-    color:rgb(0, 0, 0);
+    color: black;
     padding: 1rem 4rem;
     border: 1px solid brown;
     min-width: 4rem;
@@ -46,14 +62,13 @@ h2{
     justify-content: center;
     transition: .5s ease-in-out;
 }
-a:hover{
-    background-color: antiquewhite;
-}
+ 
 .checkbox-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .checkbox{
     height: 100px;
     width: 100px;
@@ -66,32 +81,35 @@ a:hover{
     z-index: 9999;
     transition: 400ms ease-in-out 0s;
 }
-.checkbox .trace{
+
+.checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: rgb(0, 0, 0);
+    background-color: #ffffff;
     position: absolute;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: 0.5s ease-in-out;
 }
-.checkbox .trace :nth-child(1){
+
+.checkbox .trace:nth-child(1) {
     top: 26px;
     transform: rotate(0);
-
 }
-.checkbox .trace :nth-child(2){
+
+.checkbox .trace:nth-child(2) {
     top: 46px;
     transform: rotate(0);
-    
 }
-.checkbox .trace :nth-child(3){
+
+.checkbox .trace:nth-child(3) {
     top: 66px;
     transform: rotate(0);
-    
 }
-#toggle{
+
+#toggle {
     display: none;
 }
+
 .menu{
     position: absolute;
     top: 28px;
@@ -100,14 +118,15 @@ a:hover{
     height: 4px;
     width: 10px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px #ffffff;
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
-.menu-items{
+
+.menu-itens{
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -117,63 +136,63 @@ a:hover{
     opacity: 0;
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
+    text-align: center;
 }
-.menu-items ul{
-    list-style-type: none;
+
+.menu-itens ul{
+    list-style-type:none;
 }
-.menu-items ul li a{
+
+.menu-itens ul li a{
     margin: 10px 0;
-    color:brown;
-    text-decoration:none;
+    color: #ffffff;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
-
 }
-#toggle :checked + .checkbox .trace:nth-child(1){
+
+/* ANIMAÇÃO DO MENU */
+#toggle:checked + .checkbox .trace:nth-child(1){
     transform: rotate(45deg);
     top: 47px;
 }
-#toggle :checked + .checkbox .trace:nth-child(2){
+
+#toggle:checked + .checkbox .trace:nth-child(2){
     transform: translate(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
 }
-#toggle :checked + .checkbox .trace:nth-child(3){
+
+#toggle:checked + .checkbox .trace:nth-child(3){
     transform: rotate(-45deg);
     top: 48px;
+}
 
+#toggle:checked + .checkbox {
+    background-color: black;
 }
-#toggle:checked + .checkbox{
-    background-color: white;
-}
-#toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 0px 100vmax white;
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax black;
     z-index: 1;
 }
-#toggle:checked ~ .menu-items{
+
+#toggle:checked ~ .menu-itens {
     visibility: visible;
     opacity: 1;
 }
-.container{
-    height: auto;
-    width: 100%;
+/* Primeiro card */
+
+.card-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 3rem 0;
-}
-
-/* Primeiro card */ 
-
-.card-container{
-    display:flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
-.card{
+
+.card {
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -186,26 +205,29 @@ a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter:grayscale(0.5);
+    filter: grayscale(0.5);
     color: brown;
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
-.card-text{
+
+.card-text {
     width: 40%;
     letter-spacing: 1px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
-.card-wrapper{
-    text-align:center;
+
+.card-wrapper {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.card-wrapper::before{
-    content:'';
+
+.card-wrapper::before {
+    content: '';
     position: absolute;
     height: 100px;
     width: 100px;
@@ -215,14 +237,16 @@ a:hover{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-.card-wrapper h2{
+
+.card-wrapper h2 {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin:0;
+    margin: 0;
     transition: 0.5s ease-in-out;
 }
-.card-wrapper p{
+
+.card-wrapper p {
     font-size: 0;
     visibility: visible;
     opacity: 0;
@@ -230,15 +254,18 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-.card:hover{
-    filter:unset;
+
+.card:hover {
+    filter: unset;
 }
-.card:hover > .card-wrapper::before{
+
+.card:hover>.card-wrapper::before {
     height: 250px;
     width: 250px;
     opacity: 1;
 }
-.card:hover > .card-wrapper p {
+
+.card:hover>.card-wrapper p {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
@@ -246,13 +273,14 @@ a:hover{
 
 /* Segundo card */
 
-.card-container2{
-    display:flex;
+.card-container2 {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
-.card2{
+
+.card2 {
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -265,26 +293,29 @@ a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter:grayscale(0.5);
+    filter: grayscale(0.5);
     color: brown;
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
-.card-text2{
+
+.card-text2 {
     width: 40%;
     letter-spacing: 1px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
-.card-wrapper2{
-    text-align:center;
+
+.card-wrapper2 {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.card-wrapper2::before{
-    content:'';
+
+.card-wrapper2::before {
+    content: '';
     position: absolute;
     height: 100px;
     width: 100px;
@@ -294,15 +325,16 @@ a:hover{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-.card-wrapper2 h2{
+
+.card-wrapper2 h2 {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin:0;
+    margin: 0;
     transition: 0.5s ease-in-out;
 }
 
-.card-wrapper2 p{
+.card-wrapper2 p {
     font-size: 0;
     visibility: visible;
     opacity: 0;
@@ -310,15 +342,18 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-.card2:hover{
-    filter:unset;
+
+.card2:hover {
+    filter: unset;
 }
-.card2:hover > .card-wrapper2::before{
+
+.card2:hover>.card-wrapper2::before {
     height: 250px;
     width: 250px;
     opacity: 1;
 }
-.card2:hover > .card-wrapper2 p {
+
+.card2:hover>.card-wrapper2 p {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
@@ -326,13 +361,14 @@ a:hover{
 
 /* Terceiro card */
 
-.card-container3{
-    display:flex;
+.card-container3 {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
-.card3{
+
+.card3 {
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -345,26 +381,29 @@ a:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter:grayscale(0.5);
+    filter: grayscale(0.5);
     color: brown;
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
-.card-text3{
+
+.card-text3 {
     width: 40%;
     letter-spacing: 1px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
-.card-wrapper3{
-    text-align:center;
+
+.card-wrapper3 {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.card-wrapper3::before{
-    content:'';
+
+.card-wrapper3::before {
+    content: '';
     position: absolute;
     height: 100px;
     width: 100px;
@@ -374,14 +413,16 @@ a:hover{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-.card-wrapper3 h2{
+
+.card-wrapper3 h2 {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    margin:0;
+    margin: 0;
     transition: 0.5s ease-in-out;
 }
-.card-wrapper3 p{
+
+.card-wrapper3 p {
     font-size: 0;
     visibility: visible;
     opacity: 0;
@@ -389,20 +430,24 @@ a:hover{
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
-.card3:hover{
-    filter:unset;
+
+.card3:hover {
+    filter: unset;
 }
-.card3:hover > .card-wrapper3::before{
+
+.card3:hover>.card-wrapper3::before {
     height: 250px;
     width: 250px;
     opacity: 1;
 }
-.card3:hover > .card-wrapper3 p {
+
+.card3:hover>.card-wrapper3 p {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
 }
-.footer{
+
+.footer {
     width: 100%;
     height: 100px;
     background-color: rgb(219, 168, 168);
