@@ -3,14 +3,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color: black;
+    font-family: 'Comic Sans', sans-serif;
+    color: #2c92dd;
+    background-color: #0e1f2f;
+
 }
 
 .header-container {
     height: 100vh;
     width: 100vw;
-    background-color:  rgb(219, 168, 168);
+    background-color:  #0e1f2f;
     background-image: url('./img/Background.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +41,7 @@ h2{
 
 @keyframes blinkCursor{
     from{
-        border-right-color: black;
+        border-right-color: #2c92dd;
     }
     to{
         border-right-color: transparent;
@@ -53,9 +55,9 @@ h2{
 
 .social-media a{
     text-decoration: none;
-    color: black;
+    color: #2c92dd;
     padding: 1rem 4rem;
-    border: 1px solid brown;
+    border: 1px solid #2c92dd;
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -85,7 +87,7 @@ h2{
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #2c92dd;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -145,7 +147,7 @@ h2{
 
 .menu-itens ul li a{
     margin: 10px 0;
-    color: #ffffff;
+    color: #2c92dd;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -190,6 +192,7 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+    background-color: #0e1f2f;
 }
 
 .card {
@@ -200,13 +203,13 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(219, 168, 168);
-    background-image: url('./img/JAVA.jpg');
+    background-color: #2c92dd;
+    background-image: url('./img/ignite_rocketseat.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: brown;
+    color: white !important;
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
@@ -214,7 +217,7 @@ h2{
 .card-text {
     width: 40%;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+    color: #2c92dd;
 }
 
 .card-wrapper {
@@ -278,6 +281,7 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+    background-color: #0e1f2f;
 }
 
 .card2 {
@@ -288,13 +292,13 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(219, 168, 168);
-    background-image: url('./img/SnakeGame.PNG');
+    background-color: #0e1f2f;
+    background-image: url('./img/snake_game.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: brown;
+    color: white !important;
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
@@ -302,7 +306,7 @@ h2{
 .card-text2 {
     width: 40%;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+    color: #2c92dd;
 }
 
 .card-wrapper2 {
@@ -366,6 +370,7 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+    background-color: #0e1f2f;
 }
 
 .card3 {
@@ -376,13 +381,13 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(219, 168, 168);
-    background-image: url('./img/HTMLCSS.jpg');
+    background-color: #0e1f2f;
+    background-image: url('./img/student_sys.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: brown;
+    color: black !important;
     cursor: pointer;
     transition: 0.5 ease-in-out;
 }
@@ -390,7 +395,7 @@ h2{
 .card-text3 {
     width: 40%;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+    color: #2c92dd;
 }
 
 .card-wrapper3 {
@@ -409,7 +414,7 @@ h2{
     width: 100px;
     border-radius: 50%;
     display: block;
-    border: 1px solid white;
+    border: 1px solid black;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
@@ -450,9 +455,9 @@ h2{
 .footer {
     width: 100%;
     height: 100px;
-    background-color: rgb(219, 168, 168);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: brown;
+    color: #2c92ed;
 }
